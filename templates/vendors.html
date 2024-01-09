@@ -36,7 +36,7 @@
         {{titles[0]}}
     </h1>
     <main>
-        <div class="ven_div">
+        <div>
             <table class="table_ven">
                 <thead>
                     <tr>
@@ -44,6 +44,7 @@
                         <th>Company Name</th>
                         <th>Email</th>
                         <th>Mobile No.</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,6 +54,7 @@
                             <td>{{i['name']}}</td>
                             <td>{{i['email']}}</td>
                             <td>{{i['phone']}}</td>
+                            <td><a href="#" class="index_a">edit</a></td>
                         </tr>
                     {% endfor %}
                 </tbody>
@@ -62,7 +64,7 @@
     <hr>
     <footer>
         <div>
-            <p style="color: white;">Made by Me</p>
+            <p style="color: white;">Copyright &copy 2024 SynfullSolutions</p>
         </div>
     </footer>
 </body>

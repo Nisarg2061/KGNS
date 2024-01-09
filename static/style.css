@@ -8,7 +8,7 @@ hr{
 }
 .index_a{
     text-decoration: none;
-    color: white;
+    color: yellow;
 }
 body{
     background-color: #1B1B1B;
@@ -58,7 +58,7 @@ footer{
     display: inline;
 }
 .index_nav{
-    padding-right: 2%;
+    padding: 1% 1%;
     text-decoration: none;
     color: white;
 }
@@ -73,10 +73,22 @@ footer{
     margin: 10% 0%;
 }
 .table_ven{
-    font-size: 25px;
+    margin: 0%;
+    font-size: 1.5em;
     color: white;
-    background-color: rgba(220, 20, 60, 0.650);
+    text-align: center;
+    border-collapse: collapse;
 }
-th{
+td, th{
     width: 20em;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    padding: 2% 0%;
+    margin: 0%;
+}
+tr:hover{
+    background-color: rgba(220, 20, 60, 0.500);
+}
+.index_nav:hover{
+    background-color: rgba(220, 20, 60, 0.500);
 }
