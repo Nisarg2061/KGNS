@@ -1,1 +1,69 @@
-<h1>Vendor List</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://192.168.0.192:5000/static/style.css">
+    <title>Vendor List</title>
+</head>
+<body>
+    <header>
+        <div class="index_bar">
+          <p>
+            <a href="/" class="index_nav">
+              home
+            </a>
+            <a href="/" class="index_nav">
+              <b>
+                Vendors
+              </b>
+            </a>
+            <a href="/" class="index_nav">
+              Inventory
+            </a>
+            <a href="/" class="index_nav">
+              Bill
+            </a>
+            <a href="/" class="index_nav">
+              History
+            </a>
+          </p>
+
+        </div>
+    </header>
+    <hr>
+    <h1 style="color: white;">
+        {{titles[0]}}
+    </h1>
+    <main>
+        <div class="ven_div">
+            <table class="table_ven">
+                <thead>
+                    <tr>
+                        <th>Sr No.</th>
+                        <th>Company Name</th>
+                        <th>Email</th>
+                        <th>Mobile No.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in vendors %}
+                        <tr>
+                            <td>{{i['id']}}</td>
+                            <td>{{i['name']}}</td>
+                            <td>{{i['email']}}</td>
+                            <td>{{i['phone']}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+              </table>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            <p style="color: white;">Made by Me</p>
+        </div>
+    </footer>
+</body>
+</html>

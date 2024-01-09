@@ -18,7 +18,7 @@ header{
     padding-right: 0%;
 }
 main{
-    height: 535px;
+    height: 475px;
     width: auto;
     margin: 1% 10%;
     align-items: center;
@@ -61,4 +61,22 @@ footer{
     padding-right: 2%;
     text-decoration: none;
     color: white;
+}
+.ven_div{
+    height: auto;
+    width: auto;
+    display: inline-block;
+    margin: 10px;
+    padding: 2%;
+}
+.div_loop_ven{
+    margin: 10% 0%;
+}
+.table_ven{
+    font-size: 25px;
+    color: white;
+    background-color: rgba(220, 20, 60, 0.650);
+}
+th{
+    width: 20em;
 }
