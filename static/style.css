@@ -1,0 +1,29 @@
+*{
+    text-align: center;
+    font-family: Roboto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.underline{
+    text-decoration: underline;
+}
+.index_div{
+    height: 4.5em;
+    width: 20em;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    padding: 1%;
+}
+.bar-m{
+    height: 2.8em;
+    text-align: center;
+    text-transform:uppercase;
+    padding: 0% 0%;
+    display: inline;
+}
+.nav{
+    padding-right: 2%;
+}
