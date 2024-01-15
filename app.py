@@ -32,7 +32,7 @@ def home():
 def first():
     return render_template('vendors.html', vendors=dict_vendors, titles=Titles)
 
-@app.route("/vendors_list")
+@app.route("/api/vendors_list")
 def list_vendors():
     return jsonify(dict_vendors)
 
