@@ -8,64 +8,18 @@
 </head>
 <body>
     <header>
-        <div class="index_bar">
-          <p>
-            <a href="/" class="index_nav">
-              home
-            </a>
-            <a href="/" class="index_nav">
-              <b>
-                Vendors
-              </b>
-            </a>
-            <a href="/" class="index_nav">
-              Inventory
-            </a>
-            <a href="/" class="index_nav">
-              Bill
-            </a>
-            <a href="/" class="index_nav">
-              History
-            </a>
-          </p>
-
-        </div>
+        {% include 'header.html' %}
     </header>
     <hr>
-    <h1 style="color: white;">
-        {{titles[0]}}
-    </h1>
     <main>
-        <div>
-            <table class="table_ven">
-                <thead>
-                    <tr>
-                        <th>Sr No.</th>
-                        <th>Company Name</th>
-                        <th>Email</th>
-                        <th>Mobile No.</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for i in vendors %}
-                        <tr>
-                            <td>{{i['id']}}</td>
-                            <td>{{i['name']}}</td>
-                            <td>{{i['email']}}</td>
-                            <td>{{i['phone']}}</td>
-                            <td><a href="#" class="index_a">edit</a></td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-              </table>
-        </div>
+      <h1 style="color: white;">
+        {{titles[0]}}
+      </h1>
+      {% include 'vendor_table.html' %}
     </main>
     <hr>
     <footer>
-        <div>
-            <p style="color: white;">Copyright &copy 2024 SynfullSolutions</p>
-        </div>
+        {% include 'footer.html' %}
     </footer>
 </body>
 </html>

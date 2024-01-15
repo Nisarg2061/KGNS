@@ -1,0 +1,24 @@
+<div>
+    <table class="table_ven">
+        <thead>
+            <tr>
+                <th>Sr No.</th>
+                <th>Company Name</th>
+                <th>Email</th>
+                <th>Mobile No.</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in vendors %}
+                <tr>
+                    <td>{{i['id']}}</td>
+                    <td>{{i['name']}}</td>
+                    <td>{{i['email']}}</td>
+                    <td>{{i['phone']}}</td>
+                    <td><a href="#" class="index_a">edit</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
