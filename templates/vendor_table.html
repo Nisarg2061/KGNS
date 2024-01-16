@@ -12,10 +12,10 @@
         <tbody>
             {% for i in vendors %}
                 <tr>
-                    <td>{{i['id']}}</td>
-                    <td>{{i['name']}}</td>
-                    <td>{{i['email']}}</td>
-                    <td>{{i['phone']}}</td>
+                    <td>{{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                    <td>{{i[2]}}</td>
+                    <td>{{i[3]}}</td>
                     <td><a href="#" class="index_a">edit</a></td>
                 </tr>
             {% endfor %}
