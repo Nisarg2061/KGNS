@@ -12,9 +12,9 @@ def load_vendors():
     vendors = kgns_data()    
     return render_template('vendors.html', vendors=vendors)
 
-# @app.route("/api/vendors_list")
-# def list_vendors():
-#     return jsonify("Hello World!")
+@app.route("/api/vendors_list")
+def list_vendors():
+    return jsonify("Hello World!")
 
 
 if __name__=="__main__":

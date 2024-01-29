@@ -13,5 +13,5 @@ def kgns_data():
     vendors = cursor.fetchall()
     cursor.close()
     kgns.close()
-    
+
     return vendors
