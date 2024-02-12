@@ -96,3 +96,9 @@ tr:hover{
 .index_nav:hover{
     background-color: rgba(220, 20, 60, 0.500);
 }
+.edit_div{
+  display: inline-table;
+  color: white;
+  background-color: rgba(220, 20, 60, 0.650);
+  width: 9em;
+}

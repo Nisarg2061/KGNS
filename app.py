@@ -16,6 +16,11 @@ def load_vendors():
 def list_vendors():
     return jsonify("Hello World!")
 
+@app.route("/vendors/edit")
+def edit_view_vendors():
+    vendor = kgns_data()
+    return render_template('add_vendor.html',vendor=vendor)
+
 
 if __name__=="__main__":
     app.run(host='0.0.0.0',debug=True)
