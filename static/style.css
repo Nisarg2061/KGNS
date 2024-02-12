@@ -102,3 +102,9 @@ tr:hover{
   background-color: rgba(220, 20, 60, 0.650);
   width: 9em;
 }
+.add_div{
+  display: inline-table;
+  align-items: center;
+  width: 8em;
+  border: 1px solid white;
+}
