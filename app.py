@@ -12,6 +12,11 @@ def load_vendors():
     vendors = kgns_data()    
     return render_template('vendors.html', vendors=vendors)
 
+@app.route("/vendors/edit")
+def edit_vendor():
+    vendor = kgns_data()
+    return render_template('add_vendor.html', vendor=vendor)
+
 @app.route("/contact")
 def contact_team():
     return render_template('contact.html')

@@ -18,7 +18,9 @@
       <div>
         {% for i in vendor[0] %}
         <div class="edit_div">
-          {{i}}
+          <b>
+            {{i}}
+          </b>
         </div>
         {% endfor %}
       </div>
@@ -31,8 +33,6 @@
         </form>
       </div>
     </main>
-
-    <hr>
 
     <footer>
       {% include 'footer.html' %}
