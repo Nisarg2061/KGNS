@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Edit</title>
+</head>
+<body>
+
+    <header>
+      {% include 'header.html' %}
+    </header>
+
+    <main style="font-size:1.5em">
+        <h1 style="color:white">View Vendors</h1>
+
+      <div>
+        {% for i in vendor[0] %}
+        <div class="edit_div">
+          {{i}}
+        </div>
+        {% endfor %}
+      </div>
+      <br>
+      <div class="add_div">
+        <form>
+          <input type="text" placeholder="Enter name" class="pro-p"><br><br>
+            <input type="text" placeholder="Email" class="pro-p"><br><br>
+            <button><a href=" # " class="index_nav">EDIT</a></button>
+        </form>
+      </div>
+    </main>
+
+    <hr>
+
+    <footer>
+      {% include 'footer.html' %}
+    </footer>
+
+</body>
+ 
+</html>
+
