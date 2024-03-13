@@ -1,14 +1,13 @@
 *{
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Courier New', Courier, monospace;
 }
 hr{
-    color: crimson;
     margin: 2% 3%;
 }
 .index_a{
     text-decoration: none;
-    color: yellow;
+    color: black;
 }
 body{
     background-color: #1B1B1B;  
@@ -36,7 +35,7 @@ footer{
     width: 20em;
     border: 2px solid black;
     display: inline-block;
-    background-color: rgba(220, 20, 60, 0.650);
+    background-color: lightblue;
     margin: 10px;
     padding: 2%;
 }
@@ -45,7 +44,7 @@ footer{
     width: auto;
     border: 2px solid black;
     display: inline-block;
-    background-color: rgba(220, 20, 60, 0.650);
+    background-color: lightblue;
     margin: 10px;
     padding: 1%;
 }
@@ -91,8 +90,76 @@ td, th{
     margin: 0%;
 }
 tr:hover{
-    background-color: rgba(220, 20, 60, 0.500);
+    background-color: lightblue;
 }
 .index_nav:hover{
-    background-color: rgba(220, 20, 60, 0.500);
+    background-color: rgb(66, 84, 90);
 }
+.edit_div{
+  display: inline-table;
+  color: white;
+  background-color: rgba(220, 20, 60, 0.650);
+  width: 9em;
+}
+.add_div{
+  display: inline-table;
+  align-items: center;
+  width: 8em;
+  border: 1px solid white;
+}
+
+.column {
+    float: left;
+    width: 24%;
+    margin: 0px 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 0px 5px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    background-color: lightblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 60%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
